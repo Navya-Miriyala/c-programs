@@ -1,0 +1,27 @@
+#include<stdio.h>
+void main()
+{
+int n,sum=0,temp=0,i,r,fact;
+scanf("%d",&n);
+temp=n;
+while(n!=0){
+i=1,fact=1;
+r=n%10;
+while(i<=r)
+{
+fact=fact*i;
+i++;
+}
+sum=sum+fact;
+n=n/10;
+}
+if(sum==temp)
+printf("%d is a strong number",temp);
+else 
+printf("%d is not a strong number",temp);
+}
+output:
+145
+145 is a strong number 
+123
+123 is not a strong number 
